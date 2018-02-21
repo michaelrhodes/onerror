@@ -1,4 +1,4 @@
 module.exports = {
-  passer: require('./pass'),
-  thrower: require('./throw')
+  handle: require('./handle'),
+  throw: require('./throw')
 }

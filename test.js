@@ -1,5 +1,5 @@
 var assert = require('assert')
-var passer = require('./pass')
+var handler = require('./handle')
 var thrower = require('./throw')
 var then
 
@@ -11,7 +11,7 @@ function bad (cb) {
   cb(new Error)
 }
 
-then = passer(function (err) {
+then = handler(function (err) {
   assert.ok(err instanceof Error)
 })
 

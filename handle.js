@@ -1,6 +1,6 @@
-module.exports = passer
+module.exports = handler
 
-function passer (efn) {
+function handler (efn) {
   return function (fn) {
     return function (err) {
       if (err) return efn(err)
