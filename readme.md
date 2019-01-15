@@ -1,9 +1,9 @@
-# proper
+# onerror
 propagate callback errors
 
 ## install
 ```sh
-pnpm install michaelrhodes/proper#1.0.0
+npm install michaelrhodes/onerror#1.0.0
 ```
 
 ## use
@@ -16,11 +16,11 @@ function risky (arg, cb) {
     cb(null)
 }
 
-// Provide `proper/handle` an error handler
+// Provide `onerror` an error handler
 // and it gives you a function with which
 // to wrap your callbacks
-var handle = require('proper/handle')
-var then = handle(console.error)
+var onerror = require('onerror')
+var then = onerror(console.error)
 
 // Then you can go nuts without having to
 // litter your code with error checks
@@ -32,8 +32,8 @@ risky('business', then(function () {
 
 // In circumstances where you’d rather
 // throw the error, you can wrap your
-// callbacks with `proper/throw`
-var then = require('proper/throw')
+// callbacks with `onerror/throw`
+var then = require('onerror/throw')
 
 risky('business', then(function () {
 

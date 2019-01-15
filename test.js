@@ -1,5 +1,5 @@
 var assert = require('assert')
-var handler = require('./handle')
+var handler = require('./')
 var thrower = require('./throw')
 var then
 

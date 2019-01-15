@@ -1,6 +1,6 @@
-module.exports = thrower
+module.exports = onerror
 
-function thrower (fn) {
+function onerror (fn) {
   return function (err) {
     if (err) throw err
     var args = arguments
