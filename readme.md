@@ -3,7 +3,7 @@ propagate callback errors
 
 ## install
 ```sh
-npm install michaelrhodes/onerror#1.0.0
+npm install michaelrhodes/onerror#2.0.0
 ```
 
 ## use
